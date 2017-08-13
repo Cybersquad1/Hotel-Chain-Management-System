@@ -1,0 +1,210 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+     <style type="text/css">
+        .container
+        {
+            width:1000px;
+            height:auto;
+            margin:auto;
+        }
+          .style1
+         {
+             width: 100%;
+         }
+          #Div1
+         {
+             height: 228px;
+             width: 312px;
+         }
+         .ws_shadow
+         {
+             height: 15px;
+             width: 312px;
+         }
+          </style>
+           <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+    <div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/name.jpg" 
+                Width="300px" />
+        
+        </asp:ContentPlaceHolder>
+        <br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+            <asp:Image ID="Image2" runat="server" Height="282px" 
+                ImageUrl="~/images/banner.jpg" Width="994px" />
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    
+    <table class="style1">
+        <tr>
+            <td>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                    <table class="style1">
+                        <tr>
+                            <td bgcolor="#990000" valign="top">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="#FFFFCC" 
+                                    NavigateUrl="~/home.aspx">Home</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#990000" valign="top">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="#FFFFCC" 
+                                    NavigateUrl="~/booking/userbranch.aspx">Booking</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#990000" valign="top">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="#FFFFCC" 
+                                    NavigateUrl="~/location/location.aspx">Locations</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#990000" valign="top">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="#FFFFCC" 
+                                    NavigateUrl="~/loginmain.aspx">Login</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#990000" valign="top">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink5" runat="server" ForeColor="#FFFFCC" 
+                                    NavigateUrl="~/gallery.aspx">Gallery</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#990000" valign="top">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink6" runat="server" ForeColor="#FFFFCC" 
+                                    NavigateUrl="~/About us/Aboutus.aspx">About us</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#990000" valign="top">
+                                <asp:Panel ID="Panel1" runat="server" Height="324px" Width="339px">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder7" runat="server">
+                                        <div id="wowslider-container1">
+                                            <div class="ws_images">
+                                                <ul>
+                                                    <li>
+                                                        <img src="data1/images/4d70a866f3530.jpg" alt="" title="" id="wows1_0"/>
+                                                    </li>
+                                                    <li>
+                                                        <img src="data1/images/facilities_spa01.jpg" alt="" title="" id="wows1_1"/>
+                                                    </li>
+                                                    <li>
+                                                        <img src="data1/images/gulf_hotel_bahrain_serviced_appartments_for_rent__tennis.jpg" alt="" title="" id="wows1_2"/>
+                                                    </li>
+                                                    <li>
+                                                        <img src="data1/images/hotel_facilities01big.jpg" alt="" title="" id="wows1_3"/>
+                                                    </li>
+                                                    <li>
+                                                        <img src="data1/images/more_baansuanfon.jpg" alt="" title="" id="wows1_4"/>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ws_bullets">
+                                                <div>
+                                                    <a href="#" title="">
+                                                    <img src="data1/tooltips/4d70a866f3530.jpg" alt=""/>
+                                                    1</a> <a href="#" title="">
+                                                    <img src="data1/tooltips/facilities_spa01.jpg" alt=""/>
+                                                    2</a> <a href="#" title="">
+                                                    <img src="data1/tooltips/gulf_hotel_bahrain_serviced_appartments_for_rent__tennis.jpg" alt=""/>
+                                                    3</a> <a href="#" title="">
+                                                    <img src="data1/tooltips/hotel_facilities01big.jpg" alt=""/>
+                                                    4</a> <a href="#" title="">
+                                                    <img src="data1/tooltips/more_baansuanfon.jpg" alt=""/>
+                                                    5</a>
+                                                </div>
+                                            </div>
+                                            <span class="wsl"><a href="http://wowslider.com">Slideshow Online</a> by WOWSlider.com v3.9</span>
+                                            <div class="ws_shadow">
+                                            </div>
+                                        </div>
+                                        <script type="text/javascript" src="engine1/wowslider.js">
+
+
+</script>
+                                        <script type="text/javascript" src="engine1/script.js">
+
+
+</script>
+                                    </asp:ContentPlaceHolder>
+                                </asp:Panel>
+                            </td>
+                        </tr>
+                    </table>
+                </asp:ContentPlaceHolder>
+            </td>
+            <td valign="top">
+                &nbsp; &nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                    <p align="center">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                    </p>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+        <table class="style1">
+            <tr>
+                <td bgcolor="#333333">
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink7" runat="server" ForeColor="White">Other Gateway Hotel Links</asp:HyperLink>
+                </td>
+                <td bgcolor="#333333">
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink8" runat="server" ForeColor="White">Taj Corporate Links</asp:HyperLink>
+                </td>
+                <td bgcolor="#333333">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink9" runat="server" ForeColor="White">Other Hotel Links</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat="server">
+        <p style="color: rgb(144, 153, 164); font-weight: bold; padding: 8px 0px 0px 12px; font-size: 10px; font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                    © 2013 The Indian Hotels Company Limited.All Rights Reserved. Site best viewed 
+                    with Internet Explorer 7.0 and higher, Mozilla Firefox 2.0, Safari 1.5. Site 
+                    last updated on Apr 26 2013</p>
+        <p style="color: rgb(144, 153, 164); font-weight: bold; padding: 8px 0px 0px 12px; font-size: 10px; font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a style="outline: none; text-decoration: none; color: rgb(96, 106, 116); font-family: Arial, Helvetica, sans-serif;" 
+                        target="_blank">Terms &amp; Conditions</a><span class="Apple-converted-space">&nbsp;</span>|<span 
+                        class="Apple-converted-space">&nbsp;</span><a 
+                        style="outline: none; text-decoration: none; color: rgb(96, 106, 116); font-family: Arial, Helvetica, sans-serif;">Privacy 
+                    Policy</a>&nbsp;</p>
+    </asp:ContentPlaceHolder>
+    
+    
+    </form>
+</body>
+</html>
